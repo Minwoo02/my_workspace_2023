@@ -116,6 +116,7 @@
   font-size: 25px;
   text-align: center;
   box-shadow: 7px 7px 0px 3px rgb(61, 61, 61);
+  z-index: 998;
 }
 
 .dashboard__section:nth-child(2) #quote p:last-child {
