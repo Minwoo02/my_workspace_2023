@@ -8,31 +8,120 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <form class="login-form hidden">
-      <input required maxlength="15" type="text" placeholder="name" />
-      <input type="submit" value="로그인" />
-    </form>
+    <section class="name-backgrounds hidden">
+      <div class="name-background">
+        <form class="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="이름(흰둥이)"
+          />
+          <input type="submit" value="로그인" />
+        </form>
+      </div>
+    </section>
 
-    <h1 id="greeting" class="hidden"></h1>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press" />
-    </form>
-    <ul id="todo-list"></ul>
-
-    <h2 id="clock_dates"></h2>
-    <h2 id="clock_times"></h2>
-
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div class="logout">
+      <a href="#" class="logoutBtn">
+        <img class="shin-img" src="img/울라울라짱구.gif" />
+      </a>
+      <div class="logout__comment">
+        <span>짱구를 잡으면 초기화!</span>
+      </div>
     </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <section class="background">
+      <div class="dashboard">
+        <div class="dashboard__section">
+          <div class="bookmark">
+            <div class="bookmark__top"></div>
+            <div class="bookmark__bottom">
+              <a
+                class="bookmark__item"
+                href="https://www.google.com/"
+                target="_blank"
+                >Google</a
+              >
+              <a
+                class="bookmark__item"
+                href="https://nomadcoders.co/"
+                target="_blank"
+                >Nomad Coder</a
+              >
+              <a
+                class="bookmark__item"
+                href="https://github.com/"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
 
+          <div class="todo">
+            <span id="todo__title">오늘 할 일</span>
+            <form id="todo-form">
+              <input type="text" placeholder=" 흰둥이 산책시키기 ⏎" />
+            </form>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+
+        <div class="dashboard__section">
+          <h1 id="greeting" class="hidden"></h1>
+
+          <div class="clock">
+            <h2 id="clock_dates"></h2>
+            <h2 id="clock_times"></h2>
+          </div>
+
+          <div id="quote">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="dashboard__section">
+          <div id="weather">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="drawbox">
+            <a href="draw.html">
+              <img src="img/짱구얼굴.jfif" />
+              <p>짱구얼굴 그리기</p>
+            </a>
+          </div>
+
+          <div class="youtube">
+            <iframe
+              class="iframe_1"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rxVl2svLthE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              class="iframe_2"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/XHMdIA6bEOE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/nameBackgrounds.js"></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
@@ -40,5 +129,9 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/apikey.js"></script>
+    <script
+      src="https://kit.fontawesome.com/15b681fb40.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

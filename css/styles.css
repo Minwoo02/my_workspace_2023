@@ -1,5 +1,94 @@
-@import "css/reset.css";
+@import "reset.css";
+@import "nameBackgrounds.css";
+@import "background.css";
+@import "dashboard.css";
+@import "draw.css";
+@font-face {
+  font-family: "omyu_pretty";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body * {
+  font-family: "omyu_pretty";
+}
 
 .hidden {
   display: none;
+}
+
+.logout__comment {
+  position: fixed;
+  z-index: 999;
+  padding: 20px;
+  width: 90px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #f7bd2f;
+  top: 30px;
+  left: 60px;
+  text-align: center;
+  color: rgb(44, 43, 43);
+  animation: commentAnimation 2s ease-in-out infinite;
+}
+
+.logout__comment:after {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  right: -29px;
+  border-left: 30px solid #f7bd2f;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.logout__comment span {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@keyframes commentAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.shin-img {
+  position: fixed;
+  width: 100px;
+  top: 20px;
+  left: 300px;
+  animation: shin 15s ease-in-out infinite;
+}
+
+@keyframes shin {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(150px);
+  }
+  30% {
+    transform: translateX(500px);
+  }
+  40% {
+    transform: translateX(400px);
+  }
+  60% {
+    transform: translateX(800px);
+  }
+  80% {
+    transform: translateX(1200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
