@@ -94,6 +94,7 @@
   align-items: center;
   position: absolute;
   top: 250px;
+  z-index: 997;
 }
 
 .clock #clock_dates {
