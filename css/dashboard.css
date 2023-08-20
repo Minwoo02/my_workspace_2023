@@ -122,10 +122,15 @@
   font-size: 20px;
 }
 
+.dashboard__section:nth-child(3) #weather span:nth-child(2),
+.dashboard__section:nth-child(3) #weather span:nth-child(3) {
+  font-size: 20px;
+}
+
 .dashboard__section:nth-child(3) .drawbox a img {
   position: fixed;
   object-fit: cover;
-  right: 50px;
+  right: 40px;
   top: 100px;
   width: 250px;
   height: 150px;
@@ -135,22 +140,22 @@
 
 .dashboard__section:nth-child(3) .drawbox a p {
   position: absolute;
-  top: 145px;
-  right: 98px;
+  top: 150px;
+  right: 90px;
   font-size: 30px;
   color: black;
   transition: all 0.4s ease-in-out;
 }
 
 .dashboard__section:nth-child(3) .drawbox a p:hover {
-  top: 145px;
-  right: 90px;
+  top: 150px;
+  right: 85px;
   font-size: 32px;
 }
 
 .dashboard__section:nth-child(3) .youtube iframe {
   position: fixed;
-  right: 50px;
+  right: 40px;
   width: 250px;
   height: 150px;
   border: 1px solid black;

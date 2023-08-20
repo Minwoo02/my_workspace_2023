@@ -17,8 +17,9 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const icon = document.querySelector("#weather span:first-child");
-      const weather = document.querySelector("#weather span:nth-child(1)");
+      const message = document.querySelector("#weather span:first-child");
+      const icon = document.querySelector("#weather span:nth-child(2)");
+      const weather = document.querySelector("#weather span:nth-child(3)");
       const city = document.querySelector("#weather span:last-child");
       const weatherAPI = data.weather[0].main;
       if (weatherAPI === "Clouds") {
@@ -38,6 +39,7 @@ function onGeoOk(position) {
       } else {
         icon.classList.add("fas", "fa-cloud");
       }
+      message.classList.add("hidden");
       city.innerText = `/ ${data.name}`;
       weather.innerText = ` ${weatherAPI}▪${data.main.temp} ℃`;
     });
