@@ -57,7 +57,8 @@ input#color {
 }
 
 button,
-label {
+label,
+#return {
   all: unset;
   padding: 5px 0px;
   text-align: center;
@@ -67,6 +68,10 @@ label {
   cursor: pointer;
   border-radius: 10px;
   transition: opacity linear 0.1s;
+}
+
+#return {
+  background-color: rgb(255, 73, 73);
 }
 
 button:hover {

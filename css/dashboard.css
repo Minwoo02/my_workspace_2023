@@ -139,6 +139,13 @@
   right: 98px;
   font-size: 30px;
   color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+.dashboard__section:nth-child(3) .drawbox a p:hover {
+  top: 145px;
+  right: 90px;
+  font-size: 32px;
 }
 
 .dashboard__section:nth-child(3) .youtube iframe {
